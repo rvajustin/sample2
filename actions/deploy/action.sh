@@ -9,6 +9,7 @@ sam build \
   --parameter-overrides AwsAccountId=$AWS_ACCOUNT_ID AwsSecretAccessKey=$AWS_SECRET_ACCESS_KEY AwsAccessKeyId=$AWS_ACCESS_KEY_ID AwsRegion=$AWS_REGION
 
 sam deploy \
+  --no-fail-on-empty-changeset \
   --config-env dev \
   --template-file $TEMPLATE_FILE \
   --stack-name $STACK_NAME \
