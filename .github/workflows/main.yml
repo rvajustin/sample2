@@ -62,6 +62,7 @@ jobs:
         shell: bash
         run: |
           echo "Running Inventory"
+          yarn
           yarn run start
           git add inventory/**
           git commit -a -m "skip ci: inventory ran v$PACKAGE_VERSION [skip ci]"
