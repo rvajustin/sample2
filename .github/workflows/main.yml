@@ -62,7 +62,7 @@ jobs:
         shell: bash
         run: |
           echo "Running Inventory"
-          yarn run auto-discover
+          yarn run start
           git add inventory/**
           git commit -a -m "skip ci: inventory ran v$PACKAGE_VERSION [skip ci]"
           git push origin HEAD:${{ github.ref }} --force
