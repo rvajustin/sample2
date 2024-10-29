@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "jsx": "react",
+    "allowImportingTsExtensions": false,
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": false,
+    "noEmit": false,
+    "declaration": true,
+    "inlineSources": true,
+    "sourceMap": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "lib": [
+      "ESNext",
+      "es2020",
+      "DOM"
+    ],
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "lib/*"
+      ]
+    }
+  },
+  "exclude": [
+    "./dist",
+    "./dist-lambda",
+    "./node_modules",
+    "./app/Apps/Expo",
+  ]
+}

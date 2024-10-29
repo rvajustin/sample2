@@ -1,0 +1,71 @@
+[
+  {
+    "ServiceName": "HelloWorld",
+    "ServiceId": "823f545dee77472aa981908022c0d1ea",
+    "ServiceArn": "arn:aws:apprunner:us-east-1:992382578140:service/HelloWorld/823f545dee77472aa981908022c0d1ea",
+    "ServiceUrl": "nijzrkj6j4.us-east-1.awsapprunner.com",
+    "CreatedAt": "2024-10-28T19:48:39-04:00",
+    "UpdatedAt": "2024-10-28T19:48:39-04:00",
+    "Status": "RUNNING",
+    "SourceConfiguration": {
+      "ImageRepository": {
+        "ImageIdentifier": "992382578140.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest",
+        "ImageConfiguration": {
+          "RuntimeEnvironmentVariables": {},
+          "Port": "80",
+          "RuntimeEnvironmentSecrets": {}
+        },
+        "ImageRepositoryType": "ECR"
+      },
+      "AutoDeploymentsEnabled": false,
+      "AuthenticationConfiguration": {
+        "AccessRoleArn": "arn:aws:iam::992382578140:role/HelloWorld-AppRole"
+      }
+    },
+    "InstanceConfiguration": {
+      "Cpu": "1024",
+      "Memory": "2048",
+      "InstanceRoleArn": "arn:aws:iam::992382578140:role/HelloWorld-AppRole"
+    },
+    "HealthCheckConfiguration": {
+      "Protocol": "TCP",
+      "Path": "/",
+      "Interval": 5,
+      "Timeout": 2,
+      "HealthyThreshold": 1,
+      "UnhealthyThreshold": 5
+    },
+    "AutoScalingConfigurationSummary": {
+      "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:992382578140:autoscalingconfiguration/DefaultConfiguration/1/00000000000000000000000000000001",
+      "AutoScalingConfigurationName": "DefaultConfiguration",
+      "AutoScalingConfigurationRevision": 1
+    },
+    "NetworkConfiguration": {
+      "EgressConfiguration": {
+        "EgressType": "VPC",
+        "VpcConnectorArn": "arn:aws:apprunner:us-east-1:992382578140:vpcconnector/VpcConnector-T2hJmmNxB1qT/1/7950f0031d3843758cec855eff53934a"
+      },
+      "IngressConfiguration": {
+        "IsPubliclyAccessible": true
+      },
+      "IpAddressType": "IPV4"
+    },
+    "ObservabilityConfiguration": {
+      "ObservabilityEnabled": false
+    },
+    "VpcConnector": {
+      "VpcConnectorName": "VpcConnector-T2hJmmNxB1qT",
+      "VpcConnectorArn": "arn:aws:apprunner:us-east-1:992382578140:vpcconnector/VpcConnector-T2hJmmNxB1qT/1/7950f0031d3843758cec855eff53934a",
+      "VpcConnectorRevision": 1,
+      "Subnets": [
+        "subnet-0ba3c8c03454b4583",
+        "subnet-0f1b1e9e60704573d"
+      ],
+      "SecurityGroups": [
+        "sg-077e01ef438a285df"
+      ],
+      "Status": "ACTIVE",
+      "CreatedAt": "2024-10-28T19:45:35-04:00"
+    }
+  }
+]

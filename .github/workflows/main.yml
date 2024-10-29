@@ -1,0 +1,74 @@
+name: 'Build'
+
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    permissions:
+      contents: write
+      packages: write
+
+    steps:
+      - name: 'Download Source'
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+          cache: 'yarn'
+
+      - name: 'Increment Package Version'
+        uses: './actions/version-bump'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 'Get New Version'
+        id: version
+        uses: './actions/version'
+
+      - name: 'Publish Docker Image'
+        uses: './actions/aws-ecr-build-push'
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.AWS_REGION }}
+          version: ${{ steps.version.outputs.version }}
+          image-name: 'hello-world'
+          context: '.'
+          file: 'Dockerfile'
+
+      - name: 'Deploy CloudFormation Stack'
+        uses: './actions/deploy'
+        with:
+          aws-account-id: ${{ vars.AWS_ACCOUNT_ID }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: 'Run Inventory'
+        shell: bash
+        run: |
+          echo "Running Inventory"
+          yarn run auto-discover
+          git add inventory/**
+          git commit -a -m "skip ci: inventory ran v$PACKAGE_VERSION [skip ci]"
+          git push origin HEAD:${{ github.ref }} --force
+
+      - name: 'Destroy CloudFormation Stack'
+        shell: bash
+        run: |
+          echo "Destroying CloudFormation Stack"
+          aws cloudformation delete-stack --stack-name sample2
