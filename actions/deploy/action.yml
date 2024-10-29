@@ -55,7 +55,6 @@ runs:
         REPO: ${{ inputs.stack-name }}
       run: |
         sam build \
-          --no-fail-on-empty-changeset \
           --config-env dev \
           --template-file template.yml \
           --region $AWS_REGION \
