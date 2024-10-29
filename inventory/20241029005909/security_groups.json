@@ -1,0 +1,55 @@
+[
+  {
+    "GroupId": "sg-06dbfe811dfe719b3",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/aada6350-9586-11ef-ae50-0e0c5416d0eb"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "AppRunnerSecurityGroup"
+      },
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      }
+    ],
+    "VpcId": "vpc-0ba8a2c356a26ee58",
+    "OwnerId": "992382578140",
+    "GroupName": "sample2-AppRunnerSecurityGroup-VKP6VFMDd8dD",
+    "Description": "AppRunner security group",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+      }
+    ]
+  }
+]
