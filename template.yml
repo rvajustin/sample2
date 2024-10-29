@@ -76,6 +76,17 @@ Resources:
         - Key: Project
           Value: Sample2
 
+  SubnetC:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: 10.0.5.0/24
+      AvailabilityZone: !Select [ 2, !GetAZs "" ]
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Project
+          Value: Sample2
+
   AppRole:
     Type: AWS::IAM::Role
     Properties:
