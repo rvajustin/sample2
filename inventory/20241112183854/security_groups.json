@@ -1,0 +1,56 @@
+[
+  {
+    "GroupId": "sg-0d043ca4f9c328022",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "AppRunnerSecurityGroup"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      },
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/0a9de7f0-a124-11ef-988c-0affc2c6c12d"
+      }
+    ],
+    "VpcId": "vpc-022093e17848dbe97",
+    "SecurityGroupArn": "arn:aws:ec2:us-east-1:992382578140:security-group/sg-0d043ca4f9c328022",
+    "OwnerId": "992382578140",
+    "GroupName": "sample2-AppRunnerSecurityGroup-dPb5pi9GiSSx",
+    "Description": "AppRunner security group",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+      }
+    ]
+  }
+]
