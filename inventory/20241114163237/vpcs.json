@@ -1,0 +1,229 @@
+[
+  {
+    "OwnerId": "992382578140",
+    "InstanceTenancy": "default",
+    "CidrBlockAssociationSet": [
+      {
+        "AssociationId": "vpc-cidr-assoc-07e378606e3b8208b",
+        "CidrBlock": "10.0.0.0/16",
+        "CidrBlockState": {
+          "State": "associated"
+        }
+      }
+    ],
+    "IsDefault": false,
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "VPC"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      }
+    ],
+    "VpcId": "vpc-065047a2390e25a79",
+    "State": "available",
+    "CidrBlock": "10.0.0.0/16",
+    "DhcpOptionsId": "dopt-06a68aa3d1120fae4",
+    "Subnets": [
+      {
+        "AvailabilityZoneId": "use1-az4",
+        "MapCustomerOwnedIpOnLaunch": false,
+        "OwnerId": "992382578140",
+        "AssignIpv6AddressOnCreation": false,
+        "Ipv6CidrBlockAssociationSet": [],
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "SubnetC"
+          },
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "sample2"
+          },
+          {
+            "Key": "Project",
+            "Value": "Sample2"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+          }
+        ],
+        "SubnetArn": "arn:aws:ec2:us-east-1:992382578140:subnet/subnet-0c2034b6cf73fe423",
+        "EnableDns64": false,
+        "Ipv6Native": false,
+        "PrivateDnsNameOptionsOnLaunch": {
+          "HostnameType": "ip-name",
+          "EnableResourceNameDnsARecord": false,
+          "EnableResourceNameDnsAAAARecord": false
+        },
+        "SubnetId": "subnet-0c2034b6cf73fe423",
+        "State": "available",
+        "VpcId": "vpc-065047a2390e25a79",
+        "CidrBlock": "10.0.5.0/24",
+        "AvailableIpAddressCount": 251,
+        "AvailabilityZone": "us-east-1c",
+        "DefaultForAz": false,
+        "MapPublicIpOnLaunch": true
+      },
+      {
+        "AvailabilityZoneId": "use1-az2",
+        "MapCustomerOwnedIpOnLaunch": false,
+        "OwnerId": "992382578140",
+        "AssignIpv6AddressOnCreation": false,
+        "Ipv6CidrBlockAssociationSet": [],
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "Sample2"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "SubnetB"
+          },
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "sample2"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+          }
+        ],
+        "SubnetArn": "arn:aws:ec2:us-east-1:992382578140:subnet/subnet-052f86a7c819ba515",
+        "EnableDns64": false,
+        "Ipv6Native": false,
+        "PrivateDnsNameOptionsOnLaunch": {
+          "HostnameType": "ip-name",
+          "EnableResourceNameDnsARecord": false,
+          "EnableResourceNameDnsAAAARecord": false
+        },
+        "SubnetId": "subnet-052f86a7c819ba515",
+        "State": "available",
+        "VpcId": "vpc-065047a2390e25a79",
+        "CidrBlock": "10.0.3.0/24",
+        "AvailableIpAddressCount": 250,
+        "AvailabilityZone": "us-east-1b",
+        "DefaultForAz": false,
+        "MapPublicIpOnLaunch": true
+      },
+      {
+        "AvailabilityZoneId": "use1-az1",
+        "MapCustomerOwnedIpOnLaunch": false,
+        "OwnerId": "992382578140",
+        "AssignIpv6AddressOnCreation": false,
+        "Ipv6CidrBlockAssociationSet": [],
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "Sample2"
+          },
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "sample2"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "SubnetA"
+          }
+        ],
+        "SubnetArn": "arn:aws:ec2:us-east-1:992382578140:subnet/subnet-07cb3b8866d1644cf",
+        "EnableDns64": false,
+        "Ipv6Native": false,
+        "PrivateDnsNameOptionsOnLaunch": {
+          "HostnameType": "ip-name",
+          "EnableResourceNameDnsARecord": false,
+          "EnableResourceNameDnsAAAARecord": false
+        },
+        "SubnetId": "subnet-07cb3b8866d1644cf",
+        "State": "available",
+        "VpcId": "vpc-065047a2390e25a79",
+        "CidrBlock": "10.0.1.0/24",
+        "AvailableIpAddressCount": 250,
+        "AvailabilityZone": "us-east-1a",
+        "DefaultForAz": false,
+        "MapPublicIpOnLaunch": true
+      }
+    ],
+    "RouteTables": [
+      {
+        "Associations": [
+          {
+            "Main": true,
+            "RouteTableAssociationId": "rtbassoc-0441a69797fc89ef6",
+            "RouteTableId": "rtb-05c57d269181d0b86",
+            "AssociationState": {
+              "State": "associated"
+            }
+          }
+        ],
+        "PropagatingVgws": [],
+        "RouteTableId": "rtb-05c57d269181d0b86",
+        "Routes": [
+          {
+            "DestinationCidrBlock": "10.0.0.0/16",
+            "GatewayId": "local",
+            "Origin": "CreateRouteTable",
+            "State": "active"
+          }
+        ],
+        "Tags": [],
+        "VpcId": "vpc-065047a2390e25a79",
+        "OwnerId": "992382578140"
+      },
+      {
+        "Associations": [],
+        "PropagatingVgws": [],
+        "RouteTableId": "rtb-0db1641753e29afd2",
+        "Routes": [
+          {
+            "DestinationCidrBlock": "10.0.0.0/16",
+            "GatewayId": "local",
+            "Origin": "CreateRouteTable",
+            "State": "active"
+          },
+          {
+            "DestinationCidrBlock": "0.0.0.0/0",
+            "GatewayId": "igw-04afb8904912f1e4e",
+            "Origin": "CreateRoute",
+            "State": "active"
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "Sample2"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+          },
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "sample2"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "PublicRouteTable"
+          }
+        ],
+        "VpcId": "vpc-065047a2390e25a79",
+        "OwnerId": "992382578140"
+      }
+    ]
+  }
+]

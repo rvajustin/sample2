@@ -1,0 +1,203 @@
+[
+  {
+    "ARN": "arn:aws:ec2:us-east-1:992382578140:subnet/subnet-07cb3b8866d1644cf",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "SubnetA"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ecs:us-east-1:992382578140:task-definition/sample2-ECSTaskDefinition-dDotmk8F8sTv:1",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ec2:us-east-1:992382578140:subnet/subnet-052f86a7c819ba515",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "SubnetB"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ec2:us-east-1:992382578140:subnet/subnet-0c2034b6cf73fe423",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "SubnetC"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ecs:us-east-1:992382578140:task-definition/sample2-ECSTaskDefinition-Ga296boqoAYh:1",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ecs:us-east-1:992382578140:task-definition/hello-world:1",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ec2:us-east-1:992382578140:internet-gateway/igw-04afb8904912f1e4e",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "InternetGateway"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ec2:us-east-1:992382578140:route-table/rtb-0db1641753e29afd2",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "PublicRouteTable"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ec2:us-east-1:992382578140:security-group/sg-0c1a112091d37392a",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "AppRunnerSecurityGroup"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ec2:us-east-1:992382578140:vpc/vpc-065047a2390e25a79",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "sample2"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:992382578140:stack/sample2/cdfcae80-a2a4-11ef-b31d-0ecca22ca195"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "VPC"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ecs:us-east-1:992382578140:task-definition/sample2-ECSTaskDefinition-4vqOWUWmHI0M:1",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:ecs:us-east-1:992382578140:task-definition/sample2--ECSTaskDefinition-IwUbBZgED5bd:1",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      }
+    ]
+  },
+  {
+    "ARN": "arn:aws:route53:::hostedzone/Z08465459GC8TWOD6JRC",
+    "Tags": [
+      {
+        "Key": "Project",
+        "Value": "Sample2"
+      }
+    ]
+  }
+]
